@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG Management System - Admin</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="auth.js"></script>
+</head>
+<body onload="checkLogin()">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">PG Manager</div>
+    <ul class="nav-links">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listing.html">Listing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+    </ul>
+    <!-- Logout Button -->
+    <button onclick="logout()" class="cta-button">Logout</button>
+  </nav>
+
+  <!-- Admin Section -->
+  <main>
+    <section class="admin">
+      <h2>Admin Dashboard</h2>
+      <div class="admin-actions">
+        <a href="#" class="cta-button">Add New PG</a>
+        <a href="#" class="cta-button">View Bookings</a>
+        <a href="#" class="cta-button">Manage Listings</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 PG Manager. All rights reserved.</p>
+    <p>Contact us: info@pgmanager.com</p>
+  </footer>
+</body>
+</html>

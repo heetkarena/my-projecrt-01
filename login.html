@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">PG Manager</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="listing.html">Listing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Login Form -->
+  <main>
+    <section class="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit" class="cta-button">Login</button>
+      </form>
+      <p id="loginMessage" class="message"></p>
+      <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 PG Manager. All rights reserved.</p>
+    <p>Contact us: info@pgmanager.com</p>
+  </footer>
+
+  <script src="userAuth.js"></script>
+</body>
+</html>

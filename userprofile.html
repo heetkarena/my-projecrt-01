@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="userAuth.js"></script>
+</head>
+<body onload="checkLogin()">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">PG Manager</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="listing.html">Listing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button onclick="logout()" class="cta-button">Logout</button>
+  </nav>
+
+  <!-- User Profile Section -->
+  <main>
+    <section class="profile">
+      <h2>User Profile</h2>
+      <p id="welcomeMessage"></p>
+      <div class="profile-actions">
+        <a href="#" class="cta-button">View Applications</a>
+        <a href="#" class="cta-button">Edit Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 PG Manager. All rights reserved.</p>
+    <p>Contact us: info@pgmanager.com</p>
+  </footer>
+
+  <!-- <script>
+    // Display welcome message for user
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (loggedInUser && loggedInUser.role === "user") {
+      document.getElementById("welcomeMessage").textContent = `Welcome, ${loggedInUser.name}!`;
+    } else {
+      window.location.href = "login.html"; // Redirect to login if not user
+    }
+  </script> -->
+</body>
+</html>
